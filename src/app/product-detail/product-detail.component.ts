@@ -21,6 +21,13 @@ export class ProductDetailComponent implements OnInit {
   }
 
   ngOnInit() {
+    const {
+      snapshot: {
+        params: { productId }
+      }
+    } = this.route;
+    this.product = products.find((p: Product) => p.id === +productId);
+    /*
     const productId = this.route.snapshot.params.productId;
     //distraction:
     //const {snapshot: {params: {productId}}} = this.route;
@@ -29,5 +36,6 @@ export class ProductDetailComponent implements OnInit {
 
     //ver salida de los params en consola
     //console.log(this.route.snapshot.params);
+    */
   }
 }
