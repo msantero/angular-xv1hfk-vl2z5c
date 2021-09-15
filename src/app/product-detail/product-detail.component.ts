@@ -9,7 +9,7 @@ import { CartService } from '../cart.service';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-  product: Product | undefined;
+  product: Product;
   constructor(
     private route: ActivatedRoute,
     private cartService: CartService
