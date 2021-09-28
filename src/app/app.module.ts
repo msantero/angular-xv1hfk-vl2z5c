@@ -8,7 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { CartComponent } from './cart/cart.component';
+//import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   imports: [
@@ -19,7 +19,7 @@ import { CartComponent } from './cart/cart.component';
       { path: '', component: ProductListComponent },
       { path: 'product/:productId', component: ProductDetailComponent },
       { path: 'list', component: ProductListComponent },
-      { path: 'cart', component: CartComponent }
+     // { path: 'cart', component: CartComponent }
     ])
   ],
   declarations: [
@@ -28,7 +28,7 @@ import { CartComponent } from './cart/cart.component';
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailComponent,
-    CartComponent
+  //  CartComponent
   ],
   bootstrap: [AppComponent]
 })
