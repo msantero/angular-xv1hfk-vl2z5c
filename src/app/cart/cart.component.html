@@ -1,8 +1,0 @@
-<h3>Cart</h3>
-
-<h4 *ngIf="!items || items.length === 0"></h4>
-
-<div class="cart-item" *ngFor="let item of items">
-  <span>{{ item.name }}</span>
-  <span>{{ item.price | currency }}</span>
-</div>
